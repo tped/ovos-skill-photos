@@ -12,11 +12,11 @@ Information about your skill
 
 ## Credits
 
-authorName (@githubUsername)
+tped
 
 ## Category
 
-TODO:
+TODO: Make it work
 
 ## Tags
 
