@@ -1,6 +1,6 @@
 # OVOSSkill
 
-Introductory Skill so that Skill Authors can see how an OVOS Skill is put together
+VERY Simple test - see how to display an image on the GIU
 
 ## About
 
@@ -8,9 +8,7 @@ Information about your skill
 
 ## Examples
 
-- "Hello world"
-- "How are you?"
-- "Thank you"
+- "Show Me a Photo"
 
 ## Credits
 
