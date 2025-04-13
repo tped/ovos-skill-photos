@@ -1,1 +1,48 @@
-{}
+{
+    "title": "",
+    "url": "https://github.com/tped/ovos-skill-photos",
+    "summary": "",
+    "short_description": null,
+    "description": "Information about your skill",
+    "examples": [
+        "Show Me a Photo"
+    ],
+    "desktopFile": false,
+    "warning": "",
+    "systemDeps": false,
+    "requirements": {
+        "python": [
+            "ovos-bus-client",
+            "ovos-plugin-manager",
+            "ovos-utils",
+            "ovos-workshop"
+        ],
+        "system": {},
+        "skill": []
+    },
+    "incompatible_skills": [],
+    "platforms": [
+        "i386",
+        "x86_64",
+        "ia64",
+        "arm64",
+        "arm"
+    ],
+    "branch": "master",
+    "license": "Unknown",
+    "icon": "",
+    "category": "TODO: Make it work",
+    "categories": [
+        "TODO: Make it work"
+    ],
+    "tags": [
+        "ovos skill"
+    ],
+    "credits": [
+        "tped"
+    ],
+    "skillname": "ovos-skill-photos",
+    "authorname": "tped",
+    "foldername": null,
+    "ovosskill": "VERY Simple test - see how to display an image on the GIU"
+}
