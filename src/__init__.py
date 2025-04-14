@@ -1,6 +1,6 @@
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
-from ovos_workshop.intents import IntentBuilder
+# from ovos_workshop.intents import IntentBuilder
 from ovos_workshop.decorators import intent_handler
 # from ovos_workshop.intents import IntentHandler # Uncomment to use Adapt intents
 from ovos_workshop.skills import OVOSSkill
@@ -12,7 +12,8 @@ DEFAULT_SETTINGS = {
     "PhotoName": "Test.jpg"
 }
 
-class PhotosSkill (OVOSSkill):
+
+class PhotosSkill(OVOSSkill):
     def __init__(self, *args, bus=None, **kwargs):
         """The __init__ method is called when the Skill is first constructed.
         Note that self.bus, self.skill_id, self.settings, and
@@ -23,6 +24,7 @@ class PhotosSkill (OVOSSkill):
         """
         super().__init__(*args, bus=bus, **kwargs)
         self.learning = True
+        self.photo_path = self.settings.get('PhotoName')
 
     def initialize(self):
         # merge default settings
@@ -55,7 +57,6 @@ class PhotosSkill (OVOSSkill):
     def handle_show_me(self, message):
         self.speak("Here is your photo.")
         self.gui.show_image(self.photo_path, title="Your Photo")
-
 
     def stop(self):
         """Optional action to take when "stop" is requested by the user.
