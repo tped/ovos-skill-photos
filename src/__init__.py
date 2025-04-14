@@ -13,7 +13,7 @@ DEFAULT_SETTINGS = {
 }
 
 
-class PhotosSkill(OVOSSkill):
+class PhotoSkill(OVOSSkill):
     def __init__(self, *args, bus=None, **kwargs):
         """The __init__ method is called when the Skill is first constructed.
         Note that self.bus, self.skill_id, self.settings, and
@@ -54,7 +54,7 @@ class PhotosSkill(OVOSSkill):
         return self.settings.get("my_setting", "default_value")
 
     @intent_handler("ShowMe.intent")
-    def handle_show_me(self, message):
+    def handle_show_me(self):
         self.speak("Here is your photo.")
         self.gui.show_image(self.photo_path, title="Your Photo")
 
