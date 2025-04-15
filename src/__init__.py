@@ -9,7 +9,7 @@ from ovos_workshop.skills import OVOSSkill
 DEFAULT_SETTINGS = {
     "setting1": True,
     "setting2": 50,
-    "PhotoName": "Test.jpg"
+    "PhotoName": "/home/ovos/MeePi_Media/cover.jpg"
 }
 
 
@@ -55,8 +55,8 @@ class PhotoSkill(OVOSSkill):
 
     @intent_handler("ShowMe.intent")
     def handle_show_me(self):
-        self.speak("Here is your photo.")
-        self.gui.show_image(self.photo_path, title="Your Photo")
+        self.speak("Here photo " + self.photo_path)
+        self.gui.show_image(self.photo_path, title=self.photo_path)
 
     def stop(self):
         """Optional action to take when "stop" is requested by the user.
