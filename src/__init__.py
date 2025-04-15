@@ -56,7 +56,7 @@ class PhotoSkill(OVOSSkill):
     @intent_handler("ShowMe.intent")
     def handle_show_me(self):
         self.speak("Here photo " + self.photo_path)
-        self.gui.show_image(self.photo_path, title=self.photo_path)
+        self.gui.show_image(self.photo_path, fill='PreserveAspectFit')
 
     def stop(self):
         """Optional action to take when "stop" is requested by the user.
