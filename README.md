@@ -1,6 +1,6 @@
 # OVOSSkill
 
-VERY Simple test - see how to display an image on the GIU
+VERY Simple test - see how to display an image on the OVOS GIU
 
 ## About
 
