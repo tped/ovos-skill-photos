@@ -9,7 +9,7 @@ from ovos_workshop.skills import OVOSSkill
 DEFAULT_SETTINGS = {
     "setting1": True,
     "setting2": 50,
-    "PhotoName": "/home/ovos/MeePi_Media/cover.jpg"
+    "PhotoName": "/home/ovos/MeePi-Media/cover.jpg"
 }
 
 
